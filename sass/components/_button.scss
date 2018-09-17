@@ -1,0 +1,42 @@
+.btn {
+    display: block;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn__section {
+    padding: 2rem 8.5rem;
+}
+
+.btn__join {
+    padding: 2.5rem 7.5rem;
+}
+
+.btn__header {
+    padding: 1.5rem 5.5rem;
+}
+
+.btn--block {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;    
+    border-radius: 10px;
+}
+
+.btn--block--green {
+    color: $color-white;
+    background-color: $color-green-medium;
+}
+
+.btn--block--white {
+    color: $color-green-light;
+    background-color: $color-white;
+}
+
+.btn--inline {
+    text-decoration: underline;
+    color: $color-white;
+    background-color: transparent;
+    font-size: 2.4rem;
+    margin: 2rem 0;
+}
