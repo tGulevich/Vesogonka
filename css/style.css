@@ -12,7 +12,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #f0f2f1;
+  background-color: #f5f7f6;
   max-width: 192rem; }
 
 body {
@@ -22,18 +22,30 @@ body {
   color: #575757; }
 
 .title__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 5rem;
   line-height: 6rem;
   text-transform: uppercase; }
+
+.title__span {
+  display: block;
+  text-align: center; }
 
 .title__span--light {
   color: #4ab84a; }
 
 .title__span--dark {
   color: #257325; }
+
+.title__coach-name {
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: none; }
+
+.title__coach-name--small {
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .advantages__title {
   font-size: 4.7rem;
@@ -53,6 +65,10 @@ body {
   font-weight: 700;
   color: #fff; }
 
+.coach__text {
+  text-align: center;
+  line-height: 3.6rem; }
+
 .u-margin-top-minus {
   margin-top: -8rem; }
 
@@ -71,7 +87,8 @@ body {
   padding: 2rem 8.5rem; }
 
 .btn__join {
-  padding: 2.5rem 7.5rem; }
+  padding: 2.5rem 7.5rem;
+  font-weight: 700; }
 
 .btn__header {
   padding: 1.5rem 5.5rem; }
@@ -99,6 +116,39 @@ body {
 
 .player {
   padding: 5.5rem 0; }
+
+.coach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.333333%; }
+  .coach:not(:last-child) {
+    margin-right: 1.5rem; }
+  .coach__photo-box {
+    position: relative; }
+  .coach__photo {
+    margin-bottom: 2rem; }
+  .coach__inst {
+    position: absolute;
+    bottom: 4rem;
+    right: 1rem; }
+  .coach__link {
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer; }
+  .coach__inst__icon {
+    position: absolute;
+    top: 22.5%;
+    left: 22.5%;
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: #4ab84a; }
+  .coach__description {
+    padding-top: 2rem; }
 
 .header {
   display: flex;
@@ -156,12 +206,12 @@ body {
 .section-about::before {
   content: '';
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 0;
   width: 100%;
   height: 113rem;
   background: #3aab3a url(../img/bg-pattern.png) no-repeat;
-  transform: skewY(-6deg);
+  transform: skewY(-6.5deg);
   z-index: -1; }
 
 .section-about__wrap {
@@ -172,7 +222,12 @@ body {
   align-items: center; }
 
 .advanteges {
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.coaches {
+  display: flex;
+  justify-content: space-between;
+  margin: 11.5rem 1.5rem; }

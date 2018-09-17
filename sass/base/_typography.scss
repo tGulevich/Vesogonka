@@ -5,17 +5,17 @@ body {
     color: $color-grey-dark;
 }
 
+//TITLES
+
 .title__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 5rem;
     line-height: 6rem;
     text-transform: uppercase;
 }
 
 .title__span {
-
+    display: block;
+    text-align: center;
 }
 
 .title__span--light {
@@ -27,6 +27,19 @@ body {
     color: $color-green-dark;
 }
 
+.title__coach-name {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.title__coach-name--small {
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .advantages__title {
     font-size: 4.7rem;
     letter-spacing: 1px;
@@ -35,6 +48,8 @@ body {
     color: $color-white;
     padding: 2rem 0;
 }
+
+//PARAGRAPHS
 
 .paragraph {
     text-align: center;
@@ -49,3 +64,7 @@ body {
     color: $color-white;
 }
 
+.coach__text {
+    text-align: center;
+    line-height: 3.6rem;
+}
