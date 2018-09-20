@@ -1,5 +1,4 @@
 .section-about {
-    
     position: relative;
 }
 
@@ -34,4 +33,41 @@
     display: flex;
     justify-content: space-between;
     margin: 11.5rem 1.5rem;
+}
+
+.prizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.prizes::before {
+    content: '';
+    position: absolute;
+    top: -13%;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    background: $color-green-medium url(../img/bg-pattern.png) no-repeat;
+    transform: skewY(-6.5deg);
+    z-index: -1;
+}
+
+.prizes__description {
+    margin: 5rem auto;
+    width: 60%
+}
+
+.participation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    //margin: 0 7%;
 }

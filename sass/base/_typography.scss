@@ -27,6 +27,10 @@ body {
     color: $color-green-dark;
 }
 
+.title__span--white {
+    color: $color-white;
+}
+
 .title__coach-name {
     font-size: 4.5rem;
     font-weight: 700;
@@ -55,7 +59,10 @@ body {
     text-align: center;
     margin: 2.5rem 0;
     line-height: 3.5rem;
+}
 
+.paragraph--white {
+    color: $color-white;
 }
 
 .advantages__text {

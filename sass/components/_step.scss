@@ -1,0 +1,43 @@
+.step {
+    width: 40%;
+    display: flex;
+    margin: 4rem 0;
+    //border: 1px solid blue;
+    //flex: 0 0 40%;
+
+
+    &:nth-child(2n+1) {
+        //margin-right: 5%;
+    }
+
+    &__number {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        color: $color-green-medium;
+        padding-right: 3rem;
+    }
+
+    &__description {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        line-height: 3.8rem;
+    }
+
+    &__links {
+        align-self: flex-end;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 4rem;
+        //border: 1px solid red;
+    }
+
+    &__btn {
+        padding: 2.5rem 8.5rem;
+    }
+}

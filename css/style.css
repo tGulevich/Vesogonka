@@ -36,6 +36,9 @@ body {
 .title__span--dark {
   color: #257325; }
 
+.title__span--white {
+  color: #fff; }
+
 .title__coach-name {
   font-size: 4.5rem;
   font-weight: 700;
@@ -60,6 +63,9 @@ body {
   margin: 2.5rem 0;
   line-height: 3.5rem; }
 
+.paragraph--white {
+  color: #fff; }
+
 .advantages__text {
   width: 65%;
   font-weight: 700;
@@ -77,6 +83,9 @@ body {
 
 .u-margin-top-middle {
   margin-top: 12.5rem; }
+
+.u-margin-top-small {
+  margin-top: 4rem; }
 
 .btn {
   display: block;
@@ -104,7 +113,7 @@ body {
   background-color: #3aab3a; }
 
 .btn--block--white {
-  color: #4ab84a;
+  color: #257325;
   background-color: #fff; }
 
 .btn--inline {
@@ -149,6 +158,156 @@ body {
     fill: #4ab84a; }
   .coach__description {
     padding-top: 2rem; }
+
+.prize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto; }
+  .prize__box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 27.8rem;
+    height: 31.6rem;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .prize__box:not(:last-child) {
+      margin-right: 3rem; }
+    .prize__box--silver {
+      background-image: url(../img/bg-silver.png); }
+    .prize__box--gold {
+      width: 33.7rem;
+      height: 38.5rem;
+      background-image: url(../img/bg-gold.png); }
+    .prize__box--bronze {
+      background-image: url(../img/bg-bronze.png); }
+  .prize__medal {
+    position: absolute;
+    top: -13%;
+    left: 25%; }
+  .prize__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .prize__rank {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .prize__gift {
+    line-height: 3rem;
+    font-weight: 700;
+    color: #235721;
+    padding: 0 4.6rem; }
+    .prize__gift--silver {
+      font-size: 3.5rem; }
+    .prize__gift--gold {
+      font-size: 4.5rem;
+      line-height: 4rem; }
+    .prize__gift--bronze {
+      font-size: 3.2rem;
+      text-transform: uppercase; }
+
+/*
+// CSS HEXAGONS
+.hexagon {    
+    position: relative;
+    width: 27rem; 
+    height: 15.5rem;
+    background-color: $color-white;
+    border-left: solid 1rem $color-white;
+    border-right: solid 1rem $color-white;
+    border-radius: .5rem;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 19rem;
+        height: 19rem;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: $color-white;
+        left: 3rem;
+        border-radius: .5rem;
+    }
+
+    &:before {
+        top: -9.4rem;
+        border-top: solid 1rem inherit;
+        border-right: solid 1rem inherit;
+      }
+      
+    &:after {
+        bottom: -9.4rem;
+        border-bottom: solid 1rem inherit;
+        border-left: solid 1rem inherit;
+      }
+}
+
+.hexagon--big {
+    position: relative;
+    width: 32.5rem; 
+    height: 18rem;
+    background-color: $color-white;
+    border-left: solid 1rem $color-white;
+    border-right: solid 1rem $color-white;
+    border-radius: 1rem;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 23.5rem;
+        height: 23.5rem;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: $color-white;
+        left: 3.5rem;
+        border-radius: 1rem;
+    }
+
+    &:before {
+        top: -11.1rem;
+        border-top: solid 1rem inherit;
+        border-right: solid 1rem inherit;
+      }
+      
+    &:after {
+        bottom: -11.1rem;
+        border-bottom: solid 1rem inherit;
+        border-left: solid 1rem inherit;
+      }
+}
+*/
+.step {
+  width: 40%;
+  display: flex;
+  margin: 4rem 0; }
+  .step__number {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: #3aab3a;
+    padding-right: 3rem; }
+  .step__description {
+    display: flex;
+    flex-wrap: wrap; }
+  .step__text {
+    line-height: 3.8rem; }
+  .step__links {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4rem; }
+  .step__btn {
+    padding: 2.5rem 8.5rem; }
 
 .header {
   display: flex;
@@ -231,3 +390,34 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 11.5rem 1.5rem; }
+
+.prizes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+
+.prizes::before {
+  content: '';
+  position: absolute;
+  top: -13%;
+  left: 0;
+  width: 100%;
+  height: 125%;
+  background: #3aab3a url(../img/bg-pattern.png) no-repeat;
+  transform: skewY(-6.5deg);
+  z-index: -1; }
+
+.prizes__description {
+  margin: 5rem auto;
+  width: 60%; }
+
+.participation {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
