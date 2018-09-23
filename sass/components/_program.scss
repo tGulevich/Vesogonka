@@ -1,0 +1,56 @@
+.program {
+    background-color: $color-white;
+    
+    &__name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-repeat: no-repeat;
+
+        &--man {
+            color: $color-blue-1;
+            background-image: url(../img/bg-man.png);
+        }
+
+        &--couple {
+            color: $color-brown-1;
+            background-image: url(../img/bg-couple.png);
+        }
+
+        &--woman {
+            color: $color-pink-1;
+            background-image: url(../img/bg-woman.png);
+        }
+
+        &--moms {
+            color: $color-purple-1;
+            background-image: url(../img/bg-moms.png);
+        }
+    }
+
+    &__type {
+        color: $color-grey-dark;
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+
+    }
+
+    &__text {
+
+    }
+
+    &__price {
+        color: $color-green-light;
+        font-weight: 700;
+    }
+
+    &__btn {
+
+    }
+}
