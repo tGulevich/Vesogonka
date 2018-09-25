@@ -80,6 +80,7 @@
 
     &__box {
         display: flex;
+        margin: 5rem 0;
     }
 }
 
@@ -90,7 +91,7 @@
     left: 0;
     width: 100%;
     height: 125%;
-    background: $color-green-medium url(../img/bg-pattern.png) no-repeat;
+    background: $color-blue-dark url(../img/bg-pattern.png) no-repeat;
     transform: skewY(-6.5deg);
     z-index: -1;
 }

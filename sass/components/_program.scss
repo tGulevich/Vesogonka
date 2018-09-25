@@ -1,56 +1,82 @@
 .program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     background-color: $color-white;
+    border-radius: 10px;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
     
     &__name {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-
-        background-repeat: no-repeat;
+        margin-top: 2rem;
+        width: 18rem;
+        height: 21rem;
+        //padding: 9rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
 
         &--man {
             color: $color-blue-1;
-            background-image: url(../img/bg-man.png);
+            background: url(../img/bg-man.png) no-repeat center;
+            background-size: cover;
         }
 
         &--couple {
             color: $color-brown-1;
-            background-image: url(../img/bg-couple.png);
+            background: url(../img/bg-couple.png) no-repeat center;
+            background-size: cover;
         }
 
         &--woman {
             color: $color-pink-1;
-            background-image: url(../img/bg-woman.png);
+            background: url(../img/bg-woman.png) no-repeat center;
+            background-size: cover;
         }
 
         &--moms {
             color: $color-purple-1;
-            background-image: url(../img/bg-moms.png);
+            background: url(../img/bg-moms.png) no-repeat center;
+            background-size: cover;
         }
     }
 
     &__type {
-        color: $color-grey-dark;
+        color: $color-grey-dark;    
+        font-size: 1.8rem;
+        
     }
 
     &__title {
-
+        font-size: 3rem;
+        line-height: 0.9em;
     }
 
     &__description {
-
+        padding: 2rem 1rem;
+        text-align: center;
     }
 
     &__text {
-
+        font-size: 2rem;
     }
 
     &__price {
         color: $color-green-light;
         font-weight: 700;
+        font-size: 2.8rem;
     }
 
     &__btn {
-
+        margin: 2.7rem 2.5rem;
+        padding: 2rem 5rem;
+        letter-spacing: .2em;
     }
 }
