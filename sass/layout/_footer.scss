@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 18rem;
-    padding-bottom: 5rem;
+    //padding-top: 18rem;
+    //padding-bottom: 5rem;
+    padding: 18rem 1rem 5rem 1rem;
 
     background: $color-blue-dark url(../img/bg-pattern.png) no-repeat;
     -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
@@ -98,19 +99,24 @@
     }
      
     &__logo {
-        margin-right: 13%;
-
+        //margin-right: 10%;
+        margin-right: auto;
     }
 
     &__navigation {
-
+        padding: 0 3rem;
+        
         &__list {
             list-style: none;
         }
     
         &__item {
             display: inline-block;
-            margin-right: 3rem;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+            
         }
 
         &__link {
@@ -140,7 +146,7 @@
         }
 
         &__logo {
-            padding: 0 2rem;
+            padding-left: 2rem;
         }
     }
 

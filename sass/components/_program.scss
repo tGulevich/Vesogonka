@@ -1,16 +1,73 @@
 .program {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    background-color: $color-white;
-    border-radius: 10px;
+    //display: flex;
+    //align-items: center;
+    margin: 5rem 0;
+    max-width: 100rem;
+    &__btn-arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
 
-    &:not(:last-child) {
-        margin-right: 2rem;
+        &:focus,
+        &:active {
+            outline: none;
+        }
     }
+
+    &__arrow {
+        width: 10rem;
+        height: 10rem;
+
+        &--left{
+            margin-right: 4rem;
+        }
+        &--right{
+            margin-left: 0rem;
+        }
+    }
+
+    &__box {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30rem;
+        margin: 0 2rem;
+        background-color: $color-white;
+        border-radius: 10px;
+        position: relative;
+
+        /*
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+        */
+        /*
+        &--active {
+            display: flex;
+        }
+
+        &--hidden {
+            display: none;
+        }
+
+        &--animation-right {
+            animation: moveInRight 1s ease-out forwards;
+        }
+
+        &--animation-left {
+            animation: moveInLeft 1s ease-out forwards;
+        }
+
+        &__list {
+            display: flex;
+            overflow: hidden;
+        }
+        */
+    } 
     
     &__name {
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -79,4 +136,12 @@
         padding: 2rem 5rem;
         letter-spacing: .2em;
     }
+}
+
+.slide {
+    width: 5rem;
+    height: 25rem;
+    background-color: orangered;
+    margin: 0 5rem;
+    border: 3px solid black;
 }

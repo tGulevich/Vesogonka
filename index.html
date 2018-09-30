@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
+    
+    <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Весогонка</title>
 </head>
@@ -37,7 +40,7 @@
             </div>
         </header>
         <main>
-            <section class="section-about u-margin-top-large">
+            <section class="section-about u-margin-top-medium">
                 <div class="section-about__wrap">
                     <h2 class="title__section">
                         <span class="title__span title__span--light">#Весогонка - </span>
@@ -49,7 +52,7 @@
                     </p>
                     <img src="img/player.jpg" alt="Video" class="player">
                     <div class="advanteges">
-                            <h3 class="advantages__title u-margin-top-medium">И для этого тебе не нужно голодать или ходить в спорт зал</h3>
+                            <h3 class="advantages__title u-margin-top-small">И для этого тебе не нужно голодать или ходить в спорт зал</h3>
                             <p class="paragraph advantages__text">
                                 Ежедневно ты будешь получать видео-задания с упражнениями, которые тебе покажет наш фитнес-инструктор
                             </p>
@@ -243,8 +246,25 @@
                     <span class="title__span title__span--white">Выберите подходящую<br>программу</span>
                     <span class="title__span title__span--white"></span>
                 </h2>
-                <div class="programs__box">
-                    <div class="program">
+                <div class="program">
+
+                    <!--
+                    <div class="slide">1</div>
+                    <div class="slide">2</div>
+                    <div class="slide">3</div>
+                    <div class="slide">4</div>
+                    <div class="slide">5</div>
+                    <div class="slide">6</div>
+                    <div class="slide">7</div>
+                    <div class="slide">8</div>
+                    -->
+                    <!--
+                    <button class="program__btn-arrow program__btn-arrow--left">
+                        <img src="img/circle-left.svg" alt="Left" class="program__arrow program__arrow--left">
+                    </button>
+                    -->
+                
+                    <div class="program__box">
                         <div class="program__name program__name--man">
                             <span class="program__type">Мужская</span>
                             <span class="program__title">Сброс веса</span>
@@ -259,22 +279,8 @@
                             Выбрать
                         </button>
                     </div>
-                    <div class="program">
-                        <div class="program__name program__name--man">
-                            <span class="program__type">Мужская</span>
-                            <span class="program__title">Набор массы</span>
-                        </div>
-                        <div class="program__description">
-                            <p class="program__text">
-                                Лучше всего гонять вес вместе! Вместе мы в 2 раза сильнее!
-                            </p>
-                        </div>
-                        <div class="program__price">2 000 р.</div>
-                        <button class="btn btn--block btn--block--green program__btn">
-                            Выбрать
-                        </button>
-                    </div>
-                    <div class="program">
+                    
+                    <div class="program__box">
                         <div class="program__name program__name--couple">
                             <span class="program__type">Для пар</span>
                             <span class="program__title">Сброс веса</span>
@@ -289,7 +295,8 @@
                             Выбрать
                         </button>
                     </div>
-                    <div class="program">
+
+                    <div class="program__box">
                         <div class="program__name program__name--woman">
                             <span class="program__type">Женская</span>
                             <span class="program__title">Сброс веса</span>
@@ -304,7 +311,7 @@
                             Выбрать
                         </button>
                     </div>
-                    <div class="program">
+                    <div class="program__box">
                         <div class="program__name program__name--moms">
                             <span class="program__type">Женская</span>
                             <span class="program__title">Для мам г/в</span>
@@ -319,6 +326,27 @@
                             Выбрать
                         </button>
                     </div>
+                    <div class="program__box">
+                        <div class="program__name program__name--man">
+                            <span class="program__type">Мужская</span>
+                            <span class="program__title">Набор массы</span>
+                        </div>
+                        <div class="program__description">
+                            <p class="program__text">
+                                Лучше всего гонять вес вместе! Вместе мы в 2 раза сильнее!
+                            </p>
+                        </div>
+                        <div class="program__price">2 000 р.</div>
+                        <button class="btn btn--block btn--block--green program__btn">
+                            Выбрать
+                        </button>
+                    </div>
+                
+                    <!--
+                    <button class="program__btn-arrow program__btn-arrow--right">
+                        <img src="img/circle-right.svg" alt="Right" class="program__arrow program__arrow--right">
+                    </button>
+                    -->
                 </div>
             </section>
         </main>
@@ -388,6 +416,11 @@
 
         </footer>
     </div>
-    
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="script/slick/slick.min.js"></script>
+<script type="text/javascript" src="script/slider-programs.js"></script>
+
+
 </body>
 </html>
