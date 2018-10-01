@@ -33,6 +33,7 @@
     display: flex;
     justify-content: space-between;
     margin: 6rem 1.5rem;
+    //max-width: 120rem;
 }
 
 .prizes {
@@ -78,6 +79,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    
 
     &__box {
         display: flex;

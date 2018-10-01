@@ -83,6 +83,11 @@
     min-height: 1px;
     margin-right: 50px;
 }
+
+.slick-slide:focus {
+    outline: none;
+}
+
 [dir='rtl'] .slick-slide
 {
     float: right;

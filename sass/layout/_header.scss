@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    margin: 1.5rem;
+    //margin: 1.5rem;
     overflow: hidden;
     
 
@@ -9,6 +9,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        padding: 1.5rem;
     }
 
     &__logo {
@@ -22,13 +23,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 2rem;
     }
 
     &__title {
         position: relative;
-       
         margin-bottom: 4.2rem;
-        
     }
 
     &__title-info {
@@ -45,7 +45,6 @@
         top: 50%;
         left: 50%;
         transform: translateX(-50%);
-        
     }
 }
 
@@ -65,11 +64,19 @@
     }
 
     &__link {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        font-weight: 700;
-        letter-spacing: 0.1rem;
-        color: $color-green-dark;
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            color: $color-green-dark;
+        }
+        
+        &:hover {
+            border-bottom: 2px solid $color-green-dark;
+        }
     }
 }
