@@ -4,67 +4,32 @@
     margin: 5rem 0;
     max-width: 100rem;
     z-index: 5;
-    &__btn-arrow {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
 
-        &:focus,
-        &:active {
-            outline: none;
-        }
+    
+
+    @include respond(tab-land) {
+        max-width: 82rem;
     }
-
-    &__arrow {
-        width: 10rem;
-        height: 10rem;
-
-        &--left{
-            margin-right: 4rem;
-        }
-        &--right{
-            margin-left: 0rem;
-        }
+    @include respond(tab-port) {
+        max-width: 52rem;
     }
+    @include respond(phone) {
+        max-width: 26rem;
+    }
+    @include respond(big-desktop) {
+        max-width: 140rem;
+    }
+    
 
     &__box {
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 30rem;
-        margin: 0 2rem;
+        margin: 0 1rem;
         background-color: $color-white;
         border-radius: 10px;
         position: relative;
-
-        /*
-        &:not(:last-of-type) {
-            margin-right: 2rem;
-        }
-        */
-        /*
-        &--active {
-            display: flex;
-        }
-
-        &--hidden {
-            display: none;
-        }
-
-        &--animation-right {
-            animation: moveInRight 1s ease-out forwards;
-        }
-
-        &--animation-left {
-            animation: moveInLeft 1s ease-out forwards;
-        }
-
-        &__list {
-            display: flex;
-            overflow: hidden;
-        }
-        */
     } 
     
     &__name {
@@ -76,7 +41,6 @@
         margin-top: 2rem;
         width: 18rem;
         height: 21rem;
-        //padding: 9rem 0;
         text-align: center;
         text-transform: uppercase;
         font-weight: 700;
@@ -136,6 +100,12 @@
         margin: 2.7rem 2.5rem;
         padding: 2rem 5rem;
         letter-spacing: .2em;
+
+        @include respond(tab-land) {
+            margin: 2.2rem 2.5rem;
+            padding: 1.2rem 3rem;
+        }
+    
     }
 }
 

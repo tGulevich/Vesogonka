@@ -15,9 +15,7 @@
     <div class="container">
         <header class="header">
             <div class="header__top-info">
-                    <a href="#">
-                        <img src="img/logo.png" alt="Logo" class="header__logo">
-                    </a>
+                    <a href="#" class="header__logo-link"><img src="img/logo.png" alt="Logo" class="header__logo"></a>
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item"><a href="#" class="navigation__link">О проекте</a></li>
@@ -26,9 +24,46 @@
                             <li class="navigation__item"><a href="#" class="navigation__link">Правила участия</a></li>
                         </ul>
                     </nav>
-                    <a href="#" class="btn btn__header btn--block btn--block--green">
+                    <a href="#" class="btn btn--block btn--block--green header__btn">
                         Регистрация
                     </a>
+                    
+                    
+                    <div class="menu">
+                        <input type="checkbox" class="menu__checkbox" id="menu-toggle">
+            
+                        <label for="menu-toggle" class="menu__button">
+                            <span class="menu__icon">&#9776;</span>
+                        </label>
+            
+                        <div class="menu__background">&nbsp;</div>
+            
+                        <nav class="menu__nav">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">О проекте</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Команда</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Призы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Правила участия</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="btn btn--block btn--block--white menu__btn">
+                                        Регистрация
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </nav>
+                        
+                    </div>
+
+
             </div>
             <div class="header__main-info u-margin-top-minus">
                 <div class="header__title">

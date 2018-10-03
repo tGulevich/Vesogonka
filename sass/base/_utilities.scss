@@ -20,4 +20,8 @@
 
 .u-margin-top-small {
     margin-top: 4rem;
+
+    @include respond(tab-port) {
+        margin-top: 2rem;
+    }
 }

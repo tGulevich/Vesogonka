@@ -1,11 +1,30 @@
 $(function(){
-    
-    $('.program').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
-    
+    if ( $(window).width() >= 1800 ) {
+
+        $('.program').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1
+        });
+    } else if ( $(window).width() > 900 && $(window).width() <= 1799 ) {
+        $('.program').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+    } else if ( $(window).width() > 600 && $(window).width() <= 900 ) {
+        $('.program').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+        });
+    } else if ( $(window).width() <= 600 ) {
+        $('.program').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    }
     
     /*
     var left = document.querySelector('.program__btn-arrow--left');

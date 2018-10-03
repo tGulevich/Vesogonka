@@ -1,0 +1,134 @@
+.menu {
+    display: none;
+    
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 100;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
+        
+        cursor: pointer;
+    }
+
+    &__icon {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $color-green-medium;
+    }
+
+    &__background {
+        height: 100vh;
+        width: 0rem;
+        //opacity: 0;
+        position: fixed;
+        top: 0rem;
+        right: 0rem;
+        background: linear-gradient(135deg, rgba(70,182,74,1) 50%, rgba(218,227,91,1) 100%);
+        z-index: 50;
+        transition: width .8s ease; //, opacity 0.8s linear 0.8s
+    }
+
+    &__nav {
+        //border: 1px solid red;
+        //height: 100vh;
+        //min-width: 0;
+        //max-width: 0;
+        position: fixed;
+        top: 50%;
+        right: 2.5rem;
+        z-index: 50;
+        min-width: 28rem;
+        max-width: 28rem;
+        opacity: 0;
+        
+        transition: all .5s;
+
+        transform: translateY(-50%);
+        visibility: hidden;
+    }
+
+    &__list {
+        
+        position: relative;
+        //top: 45%;
+        //left: 0;
+        //transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        //width: 50%;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 230%;
+            transition: all .4s;
+        }
+        
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-black;
+            transform: translateX(1rem);
+        }
+    }
+
+    &__btn {
+        border: 3px solid $color-white;
+        padding: 1.5rem 3.3rem;
+        margin-top: 3rem;
+
+        &:hover {
+            transform: none;
+            box-shadow: none;
+            border: 3px solid $color-white;
+            background-color: transparent;
+            box-sizing: content-box;
+            color: $color-white;
+        }
+    }
+
+    //FUNCTIONALITY
+    &__checkbox:checked ~ &__background {
+        width: 33.5rem;
+        //opacity: 1;
+        //transform: scale(65);
+        
+        //opacity: 1;
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}

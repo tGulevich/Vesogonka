@@ -1,11 +1,11 @@
 .footer {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    //padding-top: 18rem;
-    //padding-bottom: 5rem;
-    padding: 18rem 1rem 2rem 1rem;
+    
+    padding: 18rem 0rem 2rem 1rem;
 
     background: $color-blue-dark url(../img/bg-pattern.png) no-repeat;
     -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
@@ -117,6 +117,8 @@
     }
 
     &__info {
+        //max-width: 120rem;
+        //margin: 0 auto;
         align-self: stretch;
         display: flex;
         justify-content: center;
@@ -128,8 +130,17 @@
         position: absolute;
         top: -3rem;
         left: 2rem;
-        //margin-right: 10%;
-        //margin-right: auto;
+        
+        @include respond(tab-land) {
+            display: none;
+        }
+        @include respond(tab-port) {
+            display: block;
+            width: 10rem;
+            height: auto;
+            top: -1rem;
+            left: 1rem;
+        }
     }
 
     &__navigation {
@@ -162,6 +173,10 @@
             }
         }
 
+        @include respond(tab-port) {
+            display: none;
+        }
+
     }
 
     &__design {
@@ -169,7 +184,14 @@
         align-items: center;
         position: absolute;
         top: -1rem;
-        right: 2rem;
+        right: 1rem;
+
+        @include respond(tab-land) {
+            top: 5rem;
+        }
+        @include respond(tab-port) {
+            top: 1rem;
+        }
 
 
         &__text {
@@ -177,7 +199,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: $color-grey-medium;
         }
 
@@ -194,7 +216,7 @@
         }
 
         &__logo {
-            padding-left: 2rem;
+            padding-left: 1rem;
         }
     }
 
@@ -202,6 +224,10 @@
         margin: 3rem 0;
         color: $color-grey-medium;
         font-size: 1.6rem;
+
+        @include respond(tab-port) {
+            margin-top: 10rem;
+        }
     }
 
 }

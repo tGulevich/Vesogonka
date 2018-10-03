@@ -22,6 +22,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   background-color: #f5f7f6;
@@ -41,6 +47,10 @@ body {
   font-size: 5rem;
   line-height: 6rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .title__section {
+      font-size: 4rem;
+      line-height: 5rem; } }
 
 .title__span {
   display: block;
@@ -59,12 +69,18 @@ body {
   font-size: 4.5rem;
   font-weight: 700;
   text-transform: none; }
+  @media only screen and (max-width: 75em) {
+    .title__coach-name {
+      font-size: 3.5rem; } }
 
 .title__coach-name--small {
   font-size: 3rem;
   line-height: 2rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media only screen and (max-width: 75em) {
+    .title__coach-name--small {
+      font-size: 2.5rem; } }
 
 .advantages__title {
   font-size: 4.7rem;
@@ -72,7 +88,11 @@ body {
   text-align: center;
   line-height: 6rem;
   color: #fff;
-  padding: 2rem 0; }
+  padding: 2rem .5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .advantages__title {
+      font-size: 4rem;
+      line-height: 4.5rem; } }
 
 .paragraph {
   text-align: center;
@@ -90,6 +110,9 @@ body {
 .coach__text {
   text-align: center;
   line-height: 3.6rem; }
+  @media only screen and (max-width: 75em) {
+    .coach__text {
+      font-size: 2.2rem; } }
 
 .u-margin-top-minus {
   margin-top: -8rem; }
@@ -108,6 +131,9 @@ body {
 
 .u-margin-top-small {
   margin-top: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-small {
+      margin-top: 2rem; } }
 
 .btn {
   display: block;
@@ -120,9 +146,6 @@ body {
 .btn__join {
   padding: 2.5rem 7.5rem;
   font-weight: 700; }
-
-.btn__header {
-  padding: 1.5rem 5.5rem; }
 
 .btn--block, .btn--block:link, .btn--block:visited {
   font-size: 2.2rem;
@@ -158,6 +181,11 @@ body {
 
 .player {
   padding: 5.5rem 0; }
+  @media only screen and (max-width: 75em) {
+    .player {
+      width: 80%;
+      height: auto;
+      padding: 3.5rem 0; } }
 
 .coach {
   display: flex;
@@ -170,10 +198,17 @@ body {
     position: relative; }
   .coach__photo {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .coach__photo {
+        width: 90%; } }
   .coach__inst {
     position: absolute;
     bottom: 4rem;
     right: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .coach__inst {
+        bottom: 3.5rem;
+        right: 3.5rem; } }
   .coach__link {
     position: relative;
     display: block;
@@ -211,7 +246,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6rem auto; }
+  margin: 6rem auto;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .prize {
+      margin-top: 25rem; } }
   .prize__box {
     display: flex;
     align-items: center;
@@ -222,18 +261,39 @@ body {
     background-size: cover; }
     .prize__box:not(:last-child) {
       margin-right: 3rem; }
+      @media only screen and (max-width: 75em) {
+        .prize__box:not(:last-child) {
+          margin-right: 1.5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .prize__box:not(:last-child) {
+          margin-right: 3.5rem; } }
     .prize__box--silver {
       background-image: url(../img/bg-silver.png); }
     .prize__box--gold {
       width: 33.7rem;
       height: 38.5rem;
       background-image: url(../img/bg-gold.png); }
+      @media only screen and (max-width: 56.25em) {
+        .prize__box--gold {
+          width: 25rem;
+          height: 28.5rem;
+          position: absolute;
+          top: -85%; } }
     .prize__box--bronze {
       background-image: url(../img/bg-bronze.png); }
+    @media only screen and (max-width: 56.25em) {
+      .prize__box {
+        width: 25rem;
+        height: 28.5rem; } }
   .prize__medal {
     position: absolute;
-    top: -13%;
-    left: 25%; }
+    top: -14%;
+    left: 25%;
+    z-index: 5; }
+    @media only screen and (max-width: 56.25em) {
+      .prize__medal {
+        width: 12rem;
+        height: auto; } }
   .prize__text {
     display: flex;
     flex-direction: column;
@@ -252,6 +312,10 @@ body {
     .prize__gift--gold {
       font-size: 4.5rem;
       line-height: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .prize__gift--gold {
+          font-size: 3.5rem;
+          line-height: 3rem; } }
     .prize__gift--bronze {
       font-size: 3.2rem;
       text-transform: uppercase; }
@@ -337,80 +401,71 @@ body {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 75em) {
+    .step {
+      width: 45%; } }
+  @media only screen and (max-width: 56.25em) {
+    .step {
+      width: 80%; } }
   .step__number {
     font-size: 5rem;
     font-weight: 700;
     line-height: 4.5rem;
     color: #3aab3a;
     padding-right: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .step__number {
+        font-size: 4rem;
+        padding-right: 2rem; } }
   .step__description {
     display: flex;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 75em) {
+      .step__description {
+        padding-right: 2rem; } }
   .step__text {
     line-height: 3.8rem; }
   .step__links {
     align-self: flex-end;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 4rem; }
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 4rem;
+    font-size: 0; }
+    @media only screen and (max-width: 75em) {
+      .step__links {
+        margin-top: 2.5rem; } }
+    .step__links img {
+      width: 100%;
+      height: auto; }
   .step__btn {
-    padding: 2.5rem 8.5rem; }
+    padding: 2rem 8rem; }
 
 .program {
   margin: 5rem 0;
   max-width: 100rem;
   z-index: 5; }
-  .program__btn-arrow {
-    background-color: transparent;
-    border: none;
-    cursor: pointer; }
-    .program__btn-arrow:focus, .program__btn-arrow:active {
-      outline: none; }
-  .program__arrow {
-    width: 10rem;
-    height: 10rem; }
-    .program__arrow--left {
-      margin-right: 4rem; }
-    .program__arrow--right {
-      margin-left: 0rem; }
+  @media only screen and (max-width: 75em) {
+    .program {
+      max-width: 82rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .program {
+      max-width: 52rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .program {
+      max-width: 26rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .program {
+      max-width: 140rem; } }
   .program__box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 30rem;
-    margin: 0 2rem;
+    margin: 0 1rem;
     background-color: #fff;
     border-radius: 10px;
-    position: relative;
-    /*
-        &:not(:last-of-type) {
-            margin-right: 2rem;
-        }
-        */
-    /*
-        &--active {
-            display: flex;
-        }
-
-        &--hidden {
-            display: none;
-        }
-
-        &--animation-right {
-            animation: moveInRight 1s ease-out forwards;
-        }
-
-        &--animation-left {
-            animation: moveInLeft 1s ease-out forwards;
-        }
-
-        &__list {
-            display: flex;
-            overflow: hidden;
-        }
-        */ }
+    position: relative; }
   .program__name {
     text-align: center;
     display: flex;
@@ -458,6 +513,10 @@ body {
     margin: 2.7rem 2.5rem;
     padding: 2rem 5rem;
     letter-spacing: .2em; }
+    @media only screen and (max-width: 75em) {
+      .program__btn {
+        margin: 2.2rem 2.5rem;
+        padding: 1.2rem 3rem; } }
 
 .slide {
   width: 5rem;
@@ -469,14 +528,23 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 138rem;
+  margin: 0 auto; }
   .header__top-info {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 1.5rem; }
+  @media only screen and (max-width: 75em) {
+    .header__logo-link {
+      width: 9rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .header__logo-link {
+      width: 15rem; } }
   .header__logo {
-    margin-top: .5rem; }
+    width: 100%;
+    height: auto; }
   .header__main-info {
     align-self: center;
     display: flex;
@@ -486,11 +554,20 @@ body {
   .header__title {
     position: relative;
     margin-bottom: 4.2rem; }
+    @media only screen and (max-width: 75em) {
+      .header__title {
+        margin-top: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__title {
+        margin-top: -4rem; } }
   .header__title-info {
     margin: 0 50%;
     transform: translateX(-50%);
     max-width: 80%;
     height: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .header__title-info {
+        max-width: 100%; } }
   .header__title-img {
     max-width: 80%;
     height: auto;
@@ -498,14 +575,28 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%); }
+  .header__btn {
+    padding: 1.5rem 5.5rem; }
+    @media only screen and (max-width: 75em) {
+      .header__btn {
+        padding: 1.2rem 4.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__btn {
+        display: none; } }
 
 .navigation {
   flex: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation {
+      display: none; } }
   .navigation__list {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 1rem 3.5rem; }
+    @media only screen and (max-width: 75em) {
+      .navigation__list {
+        padding: 1rem 2rem; } }
   .navigation__item:not(:last-child) {
     display: inline-block;
     padding-right: 3rem; }
@@ -524,7 +615,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 18rem 1rem 2rem 1rem;
+  padding: 18rem 0rem 2rem 1rem;
   background: #1b232e url(../img/bg-pattern.png) no-repeat;
   -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
@@ -605,6 +696,16 @@ body {
     position: absolute;
     top: -3rem;
     left: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__logo {
+        display: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo {
+        display: block;
+        width: 10rem;
+        height: auto;
+        top: -1rem;
+        left: 1rem; } }
   .footer__navigation {
     padding: 0 3rem; }
     .footer__navigation__list {
@@ -619,18 +720,27 @@ body {
       font-weight: 700; }
       .footer__navigation__link:hover {
         color: #3aab3a; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        display: none; } }
   .footer__design {
     display: flex;
     align-items: center;
     position: absolute;
     top: -1rem;
-    right: 2rem; }
+    right: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__design {
+        top: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__design {
+        top: 1rem; } }
     .footer__design__text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       color: #7b8faa; }
     .footer__design__link {
       color: #3aab3a;
@@ -639,11 +749,94 @@ body {
       .footer__design__link:hover {
         color: #fff; }
     .footer__design__logo {
-      padding-left: 2rem; }
+      padding-left: 1rem; }
   .footer__copyright {
     margin: 3rem 0;
     color: #7b8faa;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copyright {
+        margin-top: 10rem; } }
+
+.menu {
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .menu {
+      display: block; } }
+  .menu__checkbox {
+    display: none; }
+  .menu__button {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 100;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer; }
+  .menu__icon {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #3aab3a; }
+  .menu__background {
+    height: 100vh;
+    width: 0rem;
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    background: linear-gradient(135deg, #46b64a 50%, #dae35b 100%);
+    z-index: 50;
+    transition: width .8s ease; }
+  .menu__nav {
+    position: fixed;
+    top: 50%;
+    right: 2.5rem;
+    z-index: 50;
+    min-width: 28rem;
+    max-width: 28rem;
+    opacity: 0;
+    transition: all .5s;
+    transform: translateY(-50%);
+    visibility: hidden; }
+  .menu__list {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    width: 100%; }
+  .menu__link:link, .menu__link:visited {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 230%;
+    transition: all .4s; }
+  .menu__link:hover, .menu__link:active {
+    background-position: 100%;
+    color: #000;
+    transform: translateX(1rem); }
+  .menu__btn {
+    border: 3px solid #fff;
+    padding: 1.5rem 3.3rem;
+    margin-top: 3rem; }
+    .menu__btn:hover {
+      transform: none;
+      box-shadow: none;
+      border: 3px solid #fff;
+      background-color: transparent;
+      box-sizing: content-box;
+      color: #fff; }
+  .menu__checkbox:checked ~ .menu__background {
+    width: 33.5rem; }
+  .menu__checkbox:checked ~ .menu__nav {
+    opacity: 1;
+    visibility: visible; }
 
 .section-about {
   position: relative; }
@@ -671,6 +864,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .advanteges {
+      margin-bottom: 3rem; } }
 
 .coaches {
   display: flex;

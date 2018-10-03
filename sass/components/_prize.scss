@@ -3,6 +3,11 @@
     justify-content: center;
     align-items: center;
     margin: 6rem auto;
+    position: relative;
+
+    @include respond(tab-port) {
+        margin-top: 25rem;
+    }
 
     &__box {
         display: flex;
@@ -15,6 +20,13 @@
 
         &:not(:last-child) {
             margin-right: 3rem;
+            
+            @include respond(tab-land) {
+                margin-right: 1.5rem;
+            }
+            @include respond(tab-port) {
+                margin-right: 3.5rem;
+            }
         }
         
         &--silver {
@@ -25,17 +37,36 @@
             width: 33.7rem;
             height: 38.5rem;
             background-image: url(../img/bg-gold.png);
+
+            @include respond(tab-port) {
+                width: 25rem;
+                height: 28.5rem;
+                position: absolute;
+                top: -85%;
+                
+            }
         }
 
         &--bronze {
             background-image: url(../img/bg-bronze.png);
         }
+
+        @include respond(tab-port) {
+            width: 25rem;
+            height: 28.5rem;
+        }
     }
 
     &__medal {
         position: absolute;
-        top: -13%;
+        top: -14%;
         left: 25%;
+        z-index: 5;
+
+        @include respond(tab-port) {
+            width: 12rem;
+            height: auto;
+        }
 
         &--silver,
         &--bronze {
@@ -77,6 +108,11 @@
         &--gold {
             font-size: 4.5rem;
             line-height: 4rem;
+
+            @include respond(tab-port) {
+                font-size: 3.5rem;
+                line-height: 3rem;
+            }
         }
 
         &--bronze {

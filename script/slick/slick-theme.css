@@ -85,16 +85,32 @@
 {
     right: -25px;
     left: auto;
+
 }
 .slick-prev:before
 {
     content: '←';
     font-size: 8rem;
+
 }
+
+
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
     font-size: 8rem;
+}
+
+@media (min-resolution: 192dpi) and (max-width: 75em) {
+    .slick-prev:before
+    {
+        font-size: 7rem;
+    }
+
+    .slick-prev
+    {
+        left: -8.5rem;
+    }
 }
 
 .slick-next
@@ -115,6 +131,18 @@
 {
     content: '←';
     font-size: 8rem;
+}
+
+@media (min-resolution: 192dpi) and (max-width: 75em) {
+    .slick-next:before
+    {
+        font-size: 7rem;
+    }
+
+    .slick-next
+    {
+        right: -8.5rem;
+    }
 }
 
 /* Dots */

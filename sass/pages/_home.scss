@@ -27,6 +27,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respond(tab-port) {
+        margin-bottom: 3rem;
+    }
 }
 
 .coaches {
