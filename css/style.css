@@ -615,7 +615,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 18rem 0rem 2rem 1rem;
+  padding: 18rem 1rem 2rem 1rem;
   background: #1b232e url(../img/bg-pattern.png) no-repeat;
   -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
@@ -624,16 +624,27 @@ body {
   .footer__social {
     display: flex;
     margin: 4rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__social {
+        flex-wrap: wrap;
+        justify-content: center; } }
     .footer__social__box {
       display: flex;
       flex-direction: column;
       align-items: center; }
       .footer__social__box:not(:last-child) {
         margin-right: 2.5rem; }
+        @media only screen and (max-width: 37.5em) {
+          .footer__social__box:not(:last-child) {
+            margin-bottom: 1rem;
+            margin-right: 1.5rem; } }
     .footer__social__title {
       text-transform: uppercase;
       font-weight: 700;
       color: #7b8faa; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__social__title {
+          font-size: 2rem; } }
     .footer__social__link {
       display: flex;
       align-items: center;
@@ -644,20 +655,11 @@ body {
       border-radius: 10px;
       position: relative;
       opacity: .5;
-      transition: all .3s;
-      /*
-            &::after{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                //background-color: rgba($color-grey-dark, .8);
-                //border-radius: 5px;
-                box-sizing: border-box;
-            }
-            */ }
+      transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__social__link {
+          width: 18rem;
+          height: 6.5rem; } }
       .footer__social__link:hover {
         opacity: 1; }
     .footer__social__link-text {
@@ -667,6 +669,9 @@ body {
       width: 100%;
       height: 100%;
       color: #fff; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__social__link-text {
+          padding-right: 1rem; } }
     .footer__social__link-action {
       text-transform: uppercase;
       font-size: 1.3rem;
@@ -674,6 +679,10 @@ body {
     .footer__social__link-name {
       font-size: 2.6rem;
       line-height: 1.2em; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__social__link-name {
+          font-size: 2.2rem;
+          line-height: 1em; } }
     .footer__social__icon {
       padding: 0 .5rem; }
       .footer__social__icon--telegram {
@@ -759,30 +768,20 @@ body {
         margin-top: 10rem; } }
 
 .menu {
-  display: none; }
+  display: none;
+  /*
+    &__toggle {
+        position: relative;
+        z-index: 1000;
+    }
+    */ }
   @media only screen and (max-width: 56.25em) {
     .menu {
       display: block; } }
   .menu__checkbox {
     display: none; }
-  .menu__button {
-    background-color: #fff;
-    height: 7rem;
-    width: 7rem;
-    position: fixed;
-    top: 6rem;
-    right: 6rem;
-    border-radius: 50%;
-    z-index: 100;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer; }
-  .menu__icon {
-    font-size: 5rem;
-    font-weight: 700;
-    color: #3aab3a; }
   .menu__background {
-    height: 100vh;
+    height: 100%;
     width: 0rem;
     position: fixed;
     top: 0rem;
@@ -837,6 +836,94 @@ body {
   .menu__checkbox:checked ~ .menu__nav {
     opacity: 1;
     visibility: visible; }
+  .menu__btn-humburger {
+    /*
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 100;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
+        cursor: pointer;
+        */
+    z-index: 100;
+    color: #3aab3a;
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 8rem;
+    height: 8rem;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 10px;
+    background-color: #f5f7f6;
+    cursor: pointer;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s; }
+  .menu__icon {
+    /*
+        font-size: 5rem;
+        font-weight: 700;
+        color: $color-green-medium;
+        */
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    right: 10px;
+    height: 5px;
+    background: #3aab3a;
+    -webkit-transition: background 0s 0.3s;
+    transition: background 0s 0.3s; }
+    .menu__icon::before, .menu__icon::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #3aab3a;
+      content: "";
+      -webkit-transition-duration: 0.3s, 0.3s;
+      transition-duration: 0.3s, 0.3s;
+      -webkit-transition-delay: 0.3s, 0s;
+      transition-delay: 0.3s, 0s; }
+    .menu__icon::before {
+      top: -15px;
+      -webkit-transition-property: top, transform;
+      transition-property: top, transform; }
+    .menu__icon::after {
+      bottom: -15px;
+      -webkit-transition-property: bottom, transform;
+      transition-property: bottom, transform; }
+  .menu__checkbox:checked + .menu__btn-humburger {
+    background: transparent; }
+  .menu__checkbox:checked + .menu__btn-humburger .menu__icon {
+    background: none; }
+  .menu__checkbox:checked + .menu__btn-humburger .menu__icon::before,
+  .menu__checkbox:checked + .menu__btn-humburger .menu__icon::after {
+    background-color: #fff;
+    -webkit-transition-delay: 0s, 0.3s;
+    transition-delay: 0s, 0.3s; }
+  .menu__checkbox:checked + .menu__btn-humburger .menu__icon::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .menu__checkbox:checked + .menu__btn-humburger .menu__icon::after {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .section-about {
   position: relative; }
