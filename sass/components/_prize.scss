@@ -8,6 +8,11 @@
     @include respond(tab-port) {
         margin-top: 25rem;
     }
+    @include respond(phone) {
+        margin-top: 18rem;
+        margin-bottom: 3rem;
+    }
+    
 
     &__box {
         display: flex;
@@ -27,6 +32,9 @@
             @include respond(tab-port) {
                 margin-right: 3.5rem;
             }
+            @include respond(phone) {
+                margin-right: 1rem;
+            }
         }
         
         &--silver {
@@ -44,6 +52,9 @@
                 position: absolute;
                 top: -85%;
             }
+            @include respond(phone) {
+                top: -80%;
+            }
         }
 
         &--bronze {
@@ -53,6 +64,10 @@
         @include respond(tab-port) {
             width: 25rem;
             height: 28.5rem;
+        }
+        @include respond(phone) {
+            width: 18rem;
+            height: 20.5rem;
         }
     }
 
@@ -64,6 +79,10 @@
 
         @include respond(tab-port) {
             width: 12rem;
+            height: auto;
+        }
+        @include respond(phone) {
+            width: 8rem;
             height: auto;
         }
 
@@ -92,6 +111,10 @@
         font-size: 2.8rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include respond(phone) {
+            font-size: 2.2rem;
+        }
     }
 
     &__gift {
@@ -99,6 +122,10 @@
         font-weight: 700;
         color: $color-green-dark-2;
         padding: 0 4.6rem;
+
+        @include respond(phone) {
+            padding: 0 2.8rem;
+        }
 
         &--silver {
             font-size: 3.5rem;
@@ -117,6 +144,15 @@
         &--bronze {
             font-size: 3.2rem;
             text-transform: uppercase;
+        }
+
+        &--silver,
+        &--gold,
+        &--bronze {
+            @include respond(phone) {
+                font-size: 2.6rem;
+                line-height: 3rem;
+            }
         }
     }
     

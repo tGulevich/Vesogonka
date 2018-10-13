@@ -109,8 +109,13 @@
     }
 }
 
+.test {
+    display: flex;
+    max-width: 100rem;
+}
+
 .slide {
-    width: 5rem;
+    width: 25rem;
     height: 25rem;
     background-color: orangered;
     margin: 0 5rem;

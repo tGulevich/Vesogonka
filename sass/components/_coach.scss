@@ -1,8 +1,17 @@
 .coach {
+    width: 33.333333%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33.333333%;
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: $color-white;
+    border-radius: 10px;
+    position: relative;
+
+    @media (max-width: 785px) {
+        background-color: transparent;
+    }
 
     &:not(:last-child) {
         margin-right: 1.5rem;
@@ -10,14 +19,26 @@
 
     &__photo-box {
         position: relative;
+        display: flex;
+        align-items: flex-start;
+        //justify-content: center;
  
     }
 
     &__photo {
+        margin: 0 auto;
         margin-bottom: 2rem;
+        width: 100%;
+        height: auto;
+
+        
         @include respond(tab-land) {
             width: 90%;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 2rem;
         }
+
     }
 
     &__inst {
@@ -26,6 +47,10 @@
         right: 1rem;
 
         @include respond(tab-land) {
+            bottom: 3.5rem;
+            right: 3.5rem;
+        }
+        @include respond(tab-port) {
             bottom: 3.5rem;
             right: 3.5rem;
         }
@@ -39,8 +64,19 @@
         border-radius: 50%;
         box-shadow: 0 0 0 4px #fff;
         cursor: pointer;
-        z-index: 1;
-        
+        background: #fff url('../../img/SVG/instagram-coach.svg') no-repeat center;
+        background-size: 60%;
+
+
+        @include respond(tab-land) {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        @media (max-width: 785px) {
+            width: 8rem;
+            height: 8rem;
+        }
 
         &::before {
             content: '';
@@ -50,14 +86,14 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background-color: $color-white;
-            box-shadow: 0 0 0 1px #fff;
-            z-index: -1;
-            transition: all .2s;
+            box-shadow: 0 0 0 3px #fff;
+            transition: all .3s;
+
+            
         }
 
         &:hover::before {
-            transform: scale(0.9);
+            transform: scale(1.2);
         }
         
     }
@@ -68,7 +104,15 @@
         left: 22.5%;
         width: 4.5rem;
         height: 4.5rem;
-        fill: $color-green-light;        
+        
+        fill: $color-green-light;   
+        
+        @include respond(tab-land) {
+            top: 21%;
+            left: 21%;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
     }
 
     &__name {
@@ -77,6 +121,10 @@
 
     &__description {
         padding-top: 2rem;
+
+        @include respond(tab-port) {
+            padding-top: 1rem;
+        }
     }
 
 }

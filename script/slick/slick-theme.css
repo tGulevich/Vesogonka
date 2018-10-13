@@ -113,6 +113,13 @@
     }
 }
 
+@media (min-resolution: 192dpi) and (max-width: 48em) {
+    .slick-prev:before
+    {
+        font-size: 5rem;
+    }
+}
+
 .slick-next
 {
     right: -10rem;
@@ -143,6 +150,14 @@
     {
         right: -8.5rem;
     }
+}
+
+@media (min-resolution: 192dpi) and (max-width: 48em) {
+    .slick-next:before
+    {
+        font-size: 5rem;
+    }
+
 }
 
 /* Dots */

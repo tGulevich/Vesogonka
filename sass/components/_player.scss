@@ -6,4 +6,7 @@
         height: auto;
         padding: 3.5rem 0;
     }
+    @include respond(phone) {
+        padding: 2rem 0;
+    }
 }

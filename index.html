@@ -34,12 +34,6 @@
             
                         <label for="menu-toggle" class="menu__btn-humburger">
                                 <span class="menu__icon">&#9776;</span>
-                            <!--
-<button class="menu__btn-humburger">
-                                <span class="menu__icon">&#9776;</span>
-                            </button>
-                            -->
-                            
                         </label>
             
                         <div class="menu__background">&nbsp;</div>
@@ -64,7 +58,6 @@
                                     </a>
                                 </li>
                             </ul>
-                            
                         </nav>
                         
                     </div>
@@ -73,7 +66,13 @@
             </div>
             <div class="header__main-info u-margin-top-minus">
                 <div class="header__title">
+                    <picture class="">
+                        <source srcset="img/home-bg-mob.png" media="(max-width: 37.5em)" class="header__title-info">
+                        <img srcset="img/home-bg.png" alt="Уавствуй в марафоне 25 июня" class="header__title-info" src="img/home-bg.png">
+                    </picture>
+                    <!--
                     <img src="img/home-bg.png" alt="Уавствуй в марафоне 25 июня" class="header__title-info">
+                    -->
                     <img src="img/vesogonka.png" alt="Весогонка" class="header__title-img">
                     
                 </div>
@@ -115,15 +114,26 @@
                     <span class="title__span title__span--light">#Весогонка - </span>
                     <span class="title__span title__span--dark">Команда профессионалов</span>
                 </h2>
+                <!--
+                <button class="command__arrow command__arrow--prev">
+                    <img class="command__arrow__icon" src="img/SVG/chevron-thin-left.svg">
+                </button>
+                -->
+                <!-- f------------------------------------------------>
+
+               
+
+                <!-------------------------------------------------->
+                
                 <div class="coaches">
+                    
+
+                    
                     <div class="coach">
                         <div class="coach__photo-box">
                             <img src="img/coach1.png" alt="Тренер 1" class="coach__photo">
                             <div class="coach__inst">
                                 <a href="#" class="coach__link">
-                                    <svg class="coach__inst__icon">
-                                        <use xlink:href="img/sprite.svg#icon-instagram-coach"></use>
-                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -141,9 +151,6 @@
                             <img src="img/coach2.png" alt="Тренер 1" class="coach__photo">
                             <div class="coach__inst">
                                 <a href="#" class="coach__link">
-                                    <svg class="coach__inst__icon">
-                                        <use xlink:href="img/sprite.svg#icon-instagram-coach"></use>
-                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -156,14 +163,17 @@
                             <p class="coach__text">Один из лучших тренеров Казахстана по профессиональному бодибилдингу уже подготовил специальный курс тренировок, который приведет тебя к фигуре твоей мечты.</p>
                         </div>
                     </div>
+                    
                     <div class="coach">
                         <div class="coach__photo-box">
                             <img src="img/coach3.png" alt="Тренер 1" class="coach__photo">
                             <div class="coach__inst">
                                 <a href="#" class="coach__link">
+                                    <!--
                                     <svg class="coach__inst__icon">
                                         <use xlink:href="img/sprite.svg#icon-instagram-coach"></use>
                                     </svg>
+                                    -->
                                 </a>
                             </div>
                         </div>
@@ -176,8 +186,13 @@
                             <p class="coach__text">Лучшая мама-блогер в СНГ Алия будет выполнять упражнения и проходить весогонку вместе с тобой до самого конца.</p>
                         </div>
                     </div>
-
+                    
                 </div>
+                <!--
+                <button class="command__arrow command__arrow--next">
+                    <img class="command__arrow__icon" src="img/SVG/chevron-thin-right.svg">
+                </button>
+                -->
             </section>
             <section class="prizes u-margin-top-large">
                 <h2 class="title__section">
@@ -234,7 +249,7 @@
 
             <section class="participation u-margin-top-large">
                 <h2 class="title__section">
-                    <span class="title__span title__span--light">Для того, чтобы принять участие</span>
+                    <span class="title__span title__span--light">Для того, чтобы принять участие,</span>
                     <span class="title__span title__span--dark">в весогонке тебе понадобится</span>
                 </h2>
                 <img src="img/player2.jpg" alt="Video" class="player u-margin-top-small">
@@ -440,13 +455,86 @@
             </div>
             <p class="footer__copyright">&copy; 2018 Все права защищены</p>
 
+            <!--
+            <div class="test">
+                    <div class="coach">
+                            <div class="coach__photo-box">
+                                <img src="img/coach1.png" alt="Тренер 1" class="coach__photo">
+                                <div class="coach__inst">
+                                    <a href="#" class="coach__link">
+                                        <svg class="coach__inst__icon">
+                                            <use xlink:href="img/sprite.svg#icon-instagram-coach"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="coach__name">
+                                <span class="title__span title__span--light title__coach-name">Айя Айя</span>
+                                <span class="title__span title__span--dark title__coach-name--small">Коуч-нутрициолог</span>
+                                <span class="title__span title__span--light title__coach-name">...</span>
+                            </div>
+                            <div class="coach__description">
+                                <p class="coach__text">Профессиональный коуч-нутрициолог разработала уникальную и вкусную программу питания для достижения лучшего результата. Ведь худеть не означает есть.</p>
+                            </div>
+                        </div>
+                        <div class="coach">
+                            <div class="coach__photo-box">
+                                <img src="img/coach2.png" alt="Тренер 1" class="coach__photo">
+                                <div class="coach__inst">
+                                    <a href="#" class="coach__link">
+                                        <svg class="coach__inst__icon">
+                                            <use xlink:href="img/sprite.svg#icon-instagram-coach"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="coach__name">
+                                <span class="title__span title__span--light title__coach-name">Кайрат Кайрат</span>
+                                <span class="title__span title__span--dark title__coach-name--small">Тренер</span>
+                                <span class="title__span title__span--light title__coach-name">...</span>
+                            </div>
+                            <div class="coach__description">
+                                <p class="coach__text">Один из лучших тренеров Казахстана по профессиональному бодибилдингу уже подготовил специальный курс тренировок, который приведет тебя к фигуре твоей мечты.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="coach">
+                            <div class="coach__photo-box">
+                                <img src="img/coach3.png" alt="Тренер 1" class="coach__photo">
+                                <div class="coach__inst">
+                                    <a href="#" class="coach__link">
+                                        <svg class="coach__inst__icon">
+                                            <use xlink:href="img/sprite.svg#icon-instagram-coach"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="coach__name">
+                                <span class="title__span title__span--light title__coach-name">Алия Алия</span>
+                                <span class="title__span title__span--dark title__coach-name--small">Мама-блогер</span>
+                                <span class="title__span title__span--light title__coach-name">...</span>
+                            </div>
+                            <div class="coach__description">
+                                <p class="coach__text">Лучшая мама-блогер в СНГ Алия будет выполнять упражнения и проходить весогонку вместе с тобой до самого конца.</p>
+                            </div>
+                        </div>
+            </div>
+-->
         </footer>
     </div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="script/slick/slick.min.js"></script>
 <script type="text/javascript" src="script/slider-programs.js"></script>
+<script type="text/javascript" src="script/slider-coaches.js"></script>
 
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+});
+</script>
 
 </body>
 </html>

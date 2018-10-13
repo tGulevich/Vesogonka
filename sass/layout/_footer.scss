@@ -71,6 +71,7 @@
             @include respond(phone) {
                 width: 18rem;
                 height: 6.5rem;
+                opacity: 1;
             }
             
             &:hover {
