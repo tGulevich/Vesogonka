@@ -1,11 +1,7 @@
 .program {
-    //display: flex;
-    //align-items: center;
     margin: 5rem 0;
     max-width: 100rem;
     z-index: 5;
-
-    
 
     @include respond(tab-land) {
         max-width: 82rem;

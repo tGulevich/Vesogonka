@@ -280,7 +280,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 0 4px #fff;
     cursor: pointer;
-    background: #fff url("../../img/SVG/instagram-coach.svg") no-repeat center;
+    background: #fff url("../img/SVG/instagram-coach.svg") no-repeat center;
     background-size: 60%; }
     @media only screen and (max-width: 75em) {
       .coach__link {
@@ -900,13 +900,7 @@ body {
         margin-top: 10rem; } }
 
 .menu {
-  display: none;
-  /*
-    &__toggle {
-        position: relative;
-        z-index: 1000;
-    }
-    */ }
+  display: none; }
   @media only screen and (max-width: 56.25em) {
     .menu {
       display: block;
@@ -977,19 +971,6 @@ body {
     opacity: 1;
     visibility: visible; }
   .menu__btn-humburger {
-    /*
-        background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
-        position: fixed;
-        top: 6rem;
-        right: 6rem;
-        border-radius: 50%;
-        z-index: 100;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
-        text-align: center;
-        cursor: pointer;
-        */
     z-index: 100;
     color: #3aab3a;
     display: block;
@@ -1013,11 +994,6 @@ body {
     -webkit-transition: background 0.3s;
     transition: background 0.3s; }
   .menu__icon {
-    /*
-        font-size: 5rem;
-        font-weight: 700;
-        color: $color-green-medium;
-        */
     display: block;
     position: absolute;
     top: 30px;
@@ -1113,13 +1089,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .coaches {
       max-width: 100%; } }
-
-.pic {
-  background-color: orangered;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  border: 1px solid red; }
 
 .command__arrow {
   display: none;

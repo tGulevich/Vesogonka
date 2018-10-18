@@ -1,22 +1,14 @@
 .footer {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    
     padding: 18rem 1rem 2rem 1rem;
-
     background: $color-blue-dark url(../img/bg-pattern.png) no-repeat;
     -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
     position: relative;
     z-index: 3;
-
-
-    &__title {
-
-    }
 
     &__social {
         display: flex;
@@ -134,8 +126,6 @@
     }
 
     &__info {
-        //max-width: 120rem;
-        //margin: 0 auto;
         align-self: stretch;
         display: flex;
         justify-content: center;
@@ -162,13 +152,9 @@
 
     &__navigation {
         padding: 0 3rem;
-        //flex: 1;
-        
-        
+
         &__list {
             list-style: none;
-            //display: flex;
-            //justify-content: center;
         }
     
         &__item {
@@ -220,8 +206,7 @@
             color: $color-grey-medium;
         }
 
-        &__link {
-            
+        &__link { 
             color: $color-green-medium;
             text-decoration: underline;
             cursor: pointer;
